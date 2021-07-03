@@ -1,0 +1,14 @@
+cycler
+Cython
+fbprophet
+kiwisolver
+matplotlib
+numpy
+pandas
+pyparsing
+pystan
+python-dateutil
+pytz
+scikit-learn
+scipy
+six

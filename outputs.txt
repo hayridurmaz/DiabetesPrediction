@@ -1,0 +1,105 @@
+D:\Programs\anaconda\envs\env_dl\python.exe E:/Projects/Diabetes_Prediction/main.py
+TESTING: DECISION TREES
+{'max_depth': 6, 'max_features': 4, 'min_samples_split': 5}
+0.7829999999999999
+Accuracy on training set: 0.852
+Accuracy on test set: 0.729
+TP - True Negative 92
+FP - False Positive 31
+FN - False Negative 21
+TP - True Positive 48
+Accuracy Rate: 0.7291666666666666
+Misclassification Rate: 0.2708333333333333
+
+
+TESTING: KNN
+{'n_neighbors': 19}
+0.8076666666666666
+Accuracy of K-NN classifier on training set: 0.79
+Accuracy of K-NN classifier on test set: 0.71
+TP - True Negative 108
+FP - False Positive 15
+FN - False Negative 40
+TP - True Positive 29
+Accuracy Rate: 0.7135416666666666
+Misclassification Rate: 0.2864583333333333
+
+TESTING: LOGISTIC REGRESSION
+
+
+  n_iter_i = _check_optimize_result(
+{'C': 4, 'penalty': 'l2'}
+0.8423333333333334
+Solver lbfgs supports only 'l2' or 'none' penalties, got l1 penalty.
+
+TESTING: RANDOM FOREST
+{'criterion': 'gini', 'max_depth': 6, 'max_features': 'auto', 'n_estimators': 100}
+0.8438
+Accuracy on training set: 0.917
+Accuracy on test set: 0.745
+TP - True Negative 99
+FP - False Positive 24
+FN - False Negative 25
+TP - True Positive 44
+Accuracy Rate: 0.7447916666666666
+Misclassification Rate: 0.2552083333333333
+
+TESTING: SVM
+# Tuning hyper-parameters for precision
+
+Best parameters set found on development set:
+
+{'C': 0.5, 'decision_function_shape': 'ovo', 'gamma': 1, 'kernel': 'rbf', 'shrinking': True}
+
+
+
+Detailed classification report:
+
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+
+              precision    recall  f1-score   support
+
+           0       0.65      0.97      0.78       123
+           1       0.60      0.09      0.15        69
+
+    accuracy                           0.65       192
+   macro avg       0.63      0.53      0.47       192
+weighted avg       0.63      0.65      0.55       192
+
+
+# Tuning hyper-parameters for recall
+
+Best parameters set found on development set:
+
+{'C': 0.25, 'decision_function_shape': 'ovo', 'gamma': 1, 'kernel': 'linear', 'shrinking': True}
+
+
+Detailed classification report:
+
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+
+              precision    recall  f1-score   support
+
+           0       0.80      0.79      0.79       123
+           1       0.63      0.64      0.63        69
+
+    accuracy                           0.73       192
+   macro avg       0.71      0.71      0.71       192
+weighted avg       0.74      0.73      0.73       192
+
+
+Accuracy with SVM 73.95833333333334
+TP - True Negative 97
+FP - False Positive 26
+FN - False Negative 25
+TP - True Positive 44
+Accuracy Rate: 0.734375
+Misclassification Rate: 0.265625
+
+
+Process finished with exit code 0
+
+TESTING: NN
+accuracy: 76.69%
